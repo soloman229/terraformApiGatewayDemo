@@ -31,7 +31,7 @@ resource "aws_api_gateway_method" "test" {
   resource_id   = "${aws_api_gateway_resource.test.id}"
   http_method   = "GET"
   authorization = "COGNITO_USER_POOLS"
-  authorizer_id = "${aws_api_gateway_authorizer.test.id}"
+  # authorizer_id = "${aws_api_gateway_authorizer.test.id}"
 }
 
 resource "aws_api_gateway_integration" "test" {
